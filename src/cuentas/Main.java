@@ -1,7 +1,14 @@
 package cuentas;
-
+/**
+ * Clase que contiene la funcion main()
+ *
+ * @author Monico
+ */
 public class Main {
-
+/**
+ * Inicio de la aplicacion
+ * @param args 
+ */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -14,11 +21,11 @@ public class Main {
     }
 
     /**
-     *
+     * Operativa de la cuenta
      * @param cuenta1 the value of cuenta1
      * @param cantidad the value of cantidad
      */
-    private static void operativa_cuenta(CCuenta cuenta1, java.lang.Float cantidad) {
+    protected static void operativa_cuenta(CCuenta cuenta1, java.lang.Float cantidad) {
         try {
             cuenta1.retirar(2300);
         } catch (Exception e) {
